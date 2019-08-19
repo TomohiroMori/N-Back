@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>N-back Task</title>
+<link rel="stylesheet" href="/static/style-index.css">
+</head>
+<body>
+    <h1>N-Back Task</h1>
+    {% if rate or rate==0 %}
+      正答率{{rate}}%<br>
+    {% else %}
+      <br>
+    {% endif %}
+
+  {% if error %}
+      {{error}}
+    {% endif %}
+
+<form class="forms" method="GET" action="/Try">
+  記憶文字: <label><input type="radio" name="mode" value="1,2,3,4,5,6,7,8,9">数字</label>
+  <label><input type="radio" name="mode" value="⊇,∂,⊿,※,Ψ,∑,Ю,<>,☆">記号</label>
+  <br>
+  <br>
+
+  <label><input type="radio" name="n" value=1>N=1</label><br>
+  <label><input type="radio" name="n" value=2>N=2</label><br>
+  <label><input type="radio" name="n" value=3>N=3</label><br>
+  <label><input type="radio" name="n" value=4>N=4</label><br>
+
+  <button class="button" type="submit">Go</button>
+</form>
+
+</body>
+</html>
