@@ -2,11 +2,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>N-back Task</title>
+<title>N-Back Task Light</title>
 <link rel="stylesheet" href="/static/style-index.css">
 </head>
 <body>
-    <h1>N-Back Task</h1>
+    <h1>N-Back Task Light</h1>
     {% if rate or rate==0 %}
       正答率{{rate}}%<br>
     {% else %}
@@ -29,7 +29,23 @@
   <label><input type="radio" name="n" value=4>N=4</label><br>
 
   <button class="button" type="submit">Go</button>
-</form>
+</form><br>
 
+<div class="description">
+  <h3>～やり方～</h3>
+  <ol>
+    <li>記憶文字とNの値を選択して、Goをクリックしてください。</li>
+    <li>次の画面で文字が表示されます。その文字を記憶したら次へをクリックしてくだい。</li>
+    <li>2をN回繰り返してください。</li>
+    <li>次の画面に記憶する文字と9つの文字ボタンが表示されます。</li>
+    <li>文字の記憶とN回前に表示された文字と同じ文字ボタンのクリックを行ってください。<br>
+正しく文字ボタンを選択した場合は次の画面で〇が表示され、間違っていれば✕が表示されます。</li>
+    <li>4, 5を20回繰り返してください。</li>
+    <li>最後TOPページに戻ります。そこに正答率も表示されるため参考にしてください。</li>
+  </ol>
+  <br>
+  <h3>～当webアプリを制作するに至った動機について～</h3>
+このゲームはNバック課題やn-back taskなどの名前で知られている脳トレゲームの簡易版である。当アプリは数字を記憶するモードと併せて記号を記憶するモードも実装している。Androidアプリにも同様のものがいくつか存在しているが、当アプリのように記号を記憶するモードを実装しているものがなかった。数字やアルファベットを記憶するタイプは音による脳内の記憶が可能である。しかし音による記憶を可能にするとゲーム自体が簡単になってしまい、脳のトレーニングとしても効果が薄くなると考えた。そこで音による記憶を困難にするのに記号が相応しいと考え、当アプリの作成に至った。
+</div>
 </body>
 </html>
