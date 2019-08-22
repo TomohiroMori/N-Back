@@ -10,3 +10,10 @@ body {
 button.button {
     font-size: 1.2em;
 }
+
+.description {
+    font-size: 15pt;
+    padding-left: 350px;
+    text-align: left;
+    max-width: 900px;
+  }
